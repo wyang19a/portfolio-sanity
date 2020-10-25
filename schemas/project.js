@@ -39,11 +39,17 @@ export default {
       }
     },
     {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      description: 'Description of project',
+     },
+    {
       name: 'stack',
       title: 'Stacks used',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'stack' }]  }],
-      description: 'Name of the Project',
+      description: 'Tech stack for this project',
     },
   ]
 };
