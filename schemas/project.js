@@ -51,5 +51,11 @@ export default {
       of: [{ type: 'reference', to: [{ type: 'stack' }]  }],
       description: 'Tech stack for this project',
     },
+    {
+      name: 'type',
+      title: 'Professional',
+      type: 'boolean',
+      description: 'Is this professional project?',
+    }
   ]
 };
