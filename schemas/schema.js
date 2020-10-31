@@ -7,6 +7,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import project from './project';
 import stack from './stack';
 import profile from './profile';
+import logos from './logos';
+import intro from './intro';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,6 +17,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    project, stack, profile
+    project, stack, profile, logos, intro
   ])
 })
